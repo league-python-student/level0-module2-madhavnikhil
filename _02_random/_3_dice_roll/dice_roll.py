@@ -15,19 +15,19 @@ def get_random_dice_image():
 
     # TODO Change the line of code below to a random number from 1 to 6
     #  (1 and 6 included) so all 6 sides of the die are randomly shown.
-    rand_num = 1
+    Random = random.randint(1, 6)
 
-    if rand_num == 1:
+    if Random == 1:
         random_image = create_image('dice 1.png', 400, 400)
-    elif rand_num == 2:
+    elif Random == 2:
         random_image = create_image('dice 2.png', 400, 400)
-    elif rand_num == 3:
+    elif Random == 3:
         random_image = create_image('dice 3.png', 400, 400)
-    elif rand_num == 4:
+    elif Random == 4:
         random_image = create_image('dice 4.png', 400, 400)
-    elif rand_num == 5:
+    elif Random == 5:
         random_image = create_image('dice 5.png', 400, 400)
-    elif rand_num == 6:
+    elif Random == 6:
         random_image = create_image('dice 6.png', 400, 400)
     else:
         print("ERROR: Invalid random number!")

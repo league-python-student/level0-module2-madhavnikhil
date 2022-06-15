@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import simpledialog, Tk
+from tkinter import simpledialog, Tk, messagebox
 from PIL import Image, ImageTk
 
 window = None
@@ -17,7 +17,17 @@ def animals():
 
     # TODO 2. Make it so that the user can keep entering new animals.
     while (Animal != "exit"):
-
+        if Animal == "Cow":
+            moo()
+        if Animal == "Duck":
+            quack()
+        if Animal == "Dog":
+            woof()
+        if Animal == "Cat":
+            meow()
+        if Animal == "Llama":
+            llama_scream()
+        Animal = simpledialog.askstring(title=window, prompt="Which animal do you want?")
     # TODO 3. If the user enters 'exit', stop the program
 
 
@@ -49,20 +59,22 @@ def show_image(filename=None):
 
 def moo():
     show_image('cow.jpg')
+    messagebox.showinfo(title=window, message="Moo")
 
 
 def quack():
     show_image('duck.jpg')
-
+    messagebox.showinfo(title=window, message="Quack")
 
 
 def woof():
     show_image('dog.jpg')
-
+    messagebox.showinfo(title=window, message="Woof")
 
 
 def meow():
     show_image('cat.jpg')
+    messagebox.showinfo(title=window, message="Meow")
 
 
 

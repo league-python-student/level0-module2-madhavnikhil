@@ -1,7 +1,7 @@
 import random
 import sys
 from tkinter import messagebox, Tk
-from playsound import playsound
+
 
 
 def crack_the_safe():
@@ -27,10 +27,8 @@ def try_code(guess):
 
 
 def play_the_sound_of_success():
-    playsound('me-gusta.wav')
 
-
-if __name__ == '__main__':
-    window = Tk()
-    window.withdraw()
-    crack_the_safe()
+    if __name__ == '__main__':
+        window = Tk()
+        window.withdraw()
+        crack_the_safe()
